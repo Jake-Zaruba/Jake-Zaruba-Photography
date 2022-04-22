@@ -1,7 +1,9 @@
+//HERO SLIDER//
+
 const slides = document.querySelectorAll(`.slide`);
 const next = document.querySelector(`.next`);
 const prev = document.querySelector(`.prev`);
-const autoScroll = false;
+const autoScroll = true;
 
 const nextSlide = () => {
   const currentSlide = document.querySelector(`.current`);
@@ -25,10 +27,24 @@ const prevSlide = () => {
   setTimeout(() => currentSlide.classList.remove(`current`));
 };
 
-prev.addEventListener(`click`, (e) => {
+prev.addEventListener("click", (e) => {
   prevSlide();
+  if (autoScroll) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 2800);
+  }
 });
 
-next.addEventListener(`click`, (e) => {
+next.addEventListener("click", (e) => {
   nextSlide();
+  if (autoScroll) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 2800);
+  }
 });
+
+if (autoScroll) {
+  slideInterval = setInterval(nextSlide, 2800);
+}
+
+//INTERSECTION OBSERVER//

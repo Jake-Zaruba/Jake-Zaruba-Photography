@@ -14,11 +14,11 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #333;
-  background-color: #eee;
+  background-color: rgba(255, 232, 188, 0.531);
   padding: 0;
   /* position: relative; */
   max-width: 180rem;
-  margin: auto;
+  margin: 0 auto;
   /* overflow-y: hidden; */
 }
 
@@ -42,6 +42,7 @@ header {
 header .nav-bar {
   position: relative;
   width: 100%;
+  max-width: 180rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,18 +55,12 @@ header .nav-bar {
   width: auto;
 }
 
-.nav-icon {
-  height: 2.5rem;
-  width: 2.5rem;
+.nav-logo {
+  margin-right: 16rem;
 }
 
 .nav-bar {
   background-color: rgba(238, 238, 238, 0.515);
-}
-
-.nav-close-btn,
-.nav-menu-btn {
-  display: none;
 }
 
 .navigation .nav-list a {
@@ -76,16 +71,27 @@ header .nav-bar {
   letter-spacing: 0.2rem;
 }
 
-.navigation .nav-list svg {
-  display: none;
-}
-
 .nav-list {
   display: flex;
   gap: 2rem;
 }
 
+.nav-list-left {
+  justify-self: flex-start;
+}
+
+.nav-list-right {
+  justify-self: flex-end;
+}
+
 /* ******SLIDER****** */
+
+.section-slider {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 8rem;
+}
 
 .slider-container {
   position: relative;
@@ -101,7 +107,7 @@ header .nav-bar {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .slide.current {
@@ -123,8 +129,8 @@ header .nav-bar {
 
 .prev:hover,
 .next:hover {
-  color: #eee;
-  border-color: #eee;
+  color: #333;
+  border-color: #333;
   /* background-color: rgba(0, 0, 0, 0.175); */
 }
 
@@ -166,4 +172,63 @@ header .nav-bar {
 
 .slide:nth-child(7) {
   background: url(/img/madison-sam-2.jpeg) no-repeat bottom/cover;
+}
+
+/* ******SERVICES****** */
+
+.section-header {
+  margin-bottom: 8rem;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.section-services {
+  background: url(/img/sarah-furkan-3.jpg) no-repeat bottom/cover;
+  margin-bottom: 8rem;
+  padding-bottom: 20rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.card {
+  margin-top: 20rem;
+  height: 60rem;
+  width: 40.7rem;
+  border: 1rem solid rgba(238, 238, 238, 0.655);
+  color: black;
+  opacity: 0.4;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  opacity: 1;
+  color: #333;
+}
+
+.wedding-card {
+  background: url(/img/mikall-jacob-4.jpg) no-repeat center/cover;
+}
+
+.engagement-card {
+  background: url(/img/heather-mike-2.jpeg) no-repeat center/cover;
+  margin-top: 30rem;
+}
+
+.destination-card {
+  background: url(/img/karissa-cody-5.jpeg) no-repeat center/cover;
+  margin-top: 40rem;
+}
+
+.card-text {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  background-color: rgba(238, 238, 238, 0.655);
+  padding: 2rem 0 2rem 0;
 }
