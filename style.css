@@ -17,8 +17,9 @@ body {
   background-color: #eee;
   padding: 0;
   /* position: relative; */
-  max-width: 140rem;
+  max-width: 180rem;
   margin: auto;
+  /* overflow-y: hidden; */
 }
 
 ::selection {
@@ -44,16 +45,125 @@ header .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20rem;
+  padding: 0 3rem;
   transition: all 0.3s ease;
 }
 
 .logo {
-  height: 8rem;
+  height: 5.5rem;
   width: auto;
 }
 
 .nav-icon {
-  height: 5rem;
-  width: 5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.nav-bar {
+  background-color: rgba(238, 238, 238, 0.515);
+}
+
+.nav-close-btn,
+.nav-menu-btn {
+  display: none;
+}
+
+.navigation .nav-list a {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.2rem;
+}
+
+.navigation .nav-list svg {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ******SLIDER****** */
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.prev,
+.next {
+  height: 4rem;
+  width: 4rem;
+  border: 0.3rem solid rgba(0, 0, 0, 0.366);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.366);
+  outline: none;
+  transition: all 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  color: #eee;
+  border-color: #eee;
+  /* background-color: rgba(0, 0, 0, 0.175); */
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 1.2rem;
+}
+
+.slide:first-child {
+  background: url(/img/mikall-jacob-1.jpeg) no-repeat bottom/cover;
+}
+
+.slide:nth-child(2) {
+  background: url(/img/erin-jason-1.jpeg) no-repeat bottom/cover;
+}
+
+.slide:nth-child(3) {
+  background: url(/img/madison-sam-4.jpeg) no-repeat bottom/cover;
+}
+
+.slide:nth-child(4) {
+  background: url(/img/raechel-dan-1.jpeg) no-repeat top/cover;
+}
+
+.slide:nth-child(5) {
+  background: url(/img/nadya-nick-3.jpeg) no-repeat bottom/cover;
+}
+
+.slide:nth-child(6) {
+  background: url(/img/karissa-cody-2.jpeg) no-repeat center/cover;
+}
+
+.slide:nth-child(7) {
+  background: url(/img/madison-sam-2.jpeg) no-repeat bottom/cover;
 }
