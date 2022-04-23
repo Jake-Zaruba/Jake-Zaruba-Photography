@@ -320,30 +320,151 @@ header .nav-bar {
 /* ******ABOUT****** */
 
 .about-header {
-  margin: 8rem 0 8rem 0;
+  padding: 8rem 0 4rem 0;
   text-align: center;
   font-size: 6rem;
   font-weight: 600;
+  /* background: linear-gradient(
+      to right bottom,
+      rgba(237, 237, 237, 0.531),
+      rgba(232, 214, 199, 0.35)
+    ),
+    url("/img/val-esai-1.jpeg"); */
 }
 
 .section-about {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .about-photo {
-  height: 48rem;
-  width: 32rem;
+  height: 60rem;
+  width: 40rem;
 }
 
-.about-title {
+.about-text-box {
+  /* justify-self: flex-end; */
+  width: 50%;
+}
+
+.secondary-title {
   font-size: 2.4rem;
+  margin-bottom: 3rem;
 }
 
-.about-paragraph {
-  width: 60%;
+.secondary-paragraph {
   margin-bottom: 2rem;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.6;
+}
+
+/* ******CONTACT****** */
+
+.top-container {
+  padding: 12rem 8rem 4rem 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5rem;
+  margin: auto;
+}
+
+.contact-text-box {
+  /* width: 40%; */
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.contact-image-box {
+  width: 75rem;
+  height: 50rem;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.contact-form-box {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  align-self: flex-end;
+}
+
+.contact-form {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* width: 30rem; */
+  column-gap: 3.2rem;
+  /* row-gap: 2.4rem; */
+  /* padding: 2rem 4rem 2rem 0; */
+  color: #333;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.contact-form input {
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  color: inherit;
+}
+
+.contact-form input::placeholder {
+  color: #aaa;
+}
+
+.message {
+  justify-self: flex-start;
+  grid-column: 2;
+  grid-row: 2;
+  padding: 0 0 2rem 0;
+}
+
+textarea {
+  font-family: inherit;
+  /* width: 30rem; */
+  /* height: 10rem; */
+  font-size: 1.4rem;
+  font-family: inherit;
+  color: inherit;
+}
+
+.message label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.contact-btn {
+  height: 4rem;
+  width: 12rem;
+  border: none;
+  background-color: #333;
+  color: #eee;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.full-name {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.email-address {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.wedding-date {
+  grid-column: 2;
+  grid-row: 1;
 }
