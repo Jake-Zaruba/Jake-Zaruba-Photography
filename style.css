@@ -192,13 +192,13 @@ header .nav-bar {
 .cards {
   display: flex;
   justify-content: center;
-  gap: 15rem;
+  gap: 5%;
 }
 
 .card {
-  margin-top: 20rem;
-  height: 60rem;
-  width: 40.7rem;
+  margin-top: 32rem;
+  height: 48rem;
+  width: 32rem;
   border: 1rem solid rgba(238, 238, 238, 0.655);
   color: black;
   opacity: 0.4;
@@ -217,12 +217,10 @@ header .nav-bar {
 
 .engagement-card {
   background: url(/img/heather-mike-2.jpeg) no-repeat center/cover;
-  margin-top: 30rem;
 }
 
 .destination-card {
   background: url(/img/karissa-cody-5.jpeg) no-repeat center/cover;
-  margin-top: 40rem;
 }
 
 .card-text {
@@ -231,4 +229,121 @@ header .nav-bar {
   text-align: center;
   background-color: rgba(238, 238, 238, 0.655);
   padding: 2rem 0 2rem 0;
+}
+
+/* ******RECENT WORK****** */
+
+.section-recent {
+  background: url(/img/heather-mike-1.jpeg) no-repeat bottom/cover;
+  margin-bottom: 8rem;
+  padding: 12rem 0 12rem 0;
+}
+
+.recent-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  justify-items: center;
+  /* gap: 9%; */
+}
+
+.recent-card {
+  /* margin-top: 12rem; */
+  height: 48rem;
+  width: 32rem;
+  border: 1rem solid rgba(238, 238, 238, 0.655);
+  color: black;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.recent-card:hover {
+  opacity: 1;
+  color: #333;
+}
+
+/* .landscape-card {
+  height: 32rem;
+  width: 48rem;
+  border: 1rem solid rgba(238, 238, 238, 0.655);
+  color: black;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.landscape-card:hover {
+  opacity: 1;
+  color: #333;
+} */
+
+.gabrhael-card {
+  background: url(/img/gabrhael-eric-3.jpeg) no-repeat center/cover;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.sarah-card {
+  background: url(/img/sarah-furkan-2.jpeg) no-repeat center/cover;
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 10rem;
+}
+
+.val-card {
+  background: url(/img/val-esai-2.jpeg) no-repeat center/cover;
+  grid-column: 3;
+  grid-row: 1;
+  margin-top: 22rem;
+}
+
+.karissa-card {
+  background: url(/img/karissa-danny-2.jpeg) no-repeat center/cover;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.michelle-card {
+  background: url(/img/michelle-david-4.jpg) no-repeat center/cover;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 10rem;
+}
+
+.jared-card {
+  background: url(/img/jared-wyatt-1.jpeg) no-repeat center/cover;
+  grid-column: 3;
+  grid-row: 2;
+  margin-top: 22rem;
+}
+/* ******ABOUT****** */
+
+.about-header {
+  margin: 8rem 0 8rem 0;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.section-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-photo {
+  height: 48rem;
+  width: 32rem;
+}
+
+.about-title {
+  font-size: 2.4rem;
+}
+
+.about-paragraph {
+  width: 60%;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6;
 }
