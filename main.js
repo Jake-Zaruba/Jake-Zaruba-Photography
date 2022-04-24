@@ -48,3 +48,31 @@ if (autoScroll) {
 }
 
 //INTERSECTION OBSERVER//
+const card = document.querySelectorAll(`.card`);
+const cards = document.querySelectorAll(`.recent-card`);
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle(`show`, entry.isIntersecting);
+    });
+  },
+  {
+    threshold: 0.65,
+  }
+);
+card.forEach((card) => {
+  observer.observe(card);
+});
+const observer1 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle(`show`, entry.isIntersecting);
+    });
+  },
+  {
+    threshold: 0.6,
+  }
+);
+cards.forEach((card) => {
+  observer1.observe(card);
+});
