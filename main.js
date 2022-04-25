@@ -48,8 +48,8 @@ if (autoScroll) {
 }
 
 //INTERSECTION OBSERVER//
-const card = document.querySelectorAll(`.card`);
 const cards = document.querySelectorAll(`.recent-card`);
+const card = document.querySelectorAll(`.card`);
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

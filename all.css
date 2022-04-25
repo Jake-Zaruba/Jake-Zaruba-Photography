@@ -4,7 +4,11 @@
 .section-recent,
 .about-header,
 .section-about,
-.section-contact {
+.section-contact,
+.weddings-year,
+.section-weddings-2021,
+.section-weddings-2020,
+.wedding-page-card {
   animation: transitionIn 1s;
 }
 
