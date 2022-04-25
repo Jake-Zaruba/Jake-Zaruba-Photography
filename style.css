@@ -206,6 +206,7 @@ header .nav-bar {
   opacity: 0;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .card.show {
@@ -600,4 +601,32 @@ textarea {
   text-align: center;
   background-color: rgba(238, 238, 238, 0.655);
   padding: 2rem 0 2rem 0;
+}
+
+/* ******WEDDING GALLERIES****** */
+
+.section-gallery {
+  display: block;
+  justify-content: center;
+}
+
+.wedding-gallery {
+  display: grid;
+  width: 140rem;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.gallery-photo-portrait {
+  height: 48rem;
+  width: 32rem;
+}
+
+.gallery-photo-landscape {
+  height: 48rem;
+  width: 72rem;
 }
