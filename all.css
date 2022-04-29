@@ -22,3 +22,16 @@
     transform: translateX(0);
   }
 }
+
+/* .section-slider {
+  animation: transitionSlider 1s;
+}
+
+@keyframes transitionSlider {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
