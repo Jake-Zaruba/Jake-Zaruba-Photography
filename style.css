@@ -146,35 +146,43 @@ header .nav-bar {
 }
 
 .slide:first-child {
-  background: url(/img/mikall-jacob-1.jpeg) no-repeat bottom/cover;
+  background: url(/img/MiKall-Jacob-Gallery/mikall-jacob-1.jpeg) no-repeat
+    bottom/cover;
 }
 
 .slide:nth-child(2) {
-  background: url(/img/erin-jason-1.jpeg) no-repeat bottom/cover;
+  background: url(/img/Erin-Jason-Gallery/erin-jason-1.jpeg) no-repeat
+    bottom/cover;
 }
 
 .slide:nth-child(3) {
-  background: url(/img/madison-sam-4.jpeg) no-repeat bottom/cover;
+  background: url(/img/Madison-Sam-Gallery/madison-sam-4.jpeg) no-repeat
+    bottom/cover;
 }
 
 .slide:nth-child(4) {
-  background: url(/img/raechel-dan-1.jpeg) no-repeat top/cover;
+  background: url(/img/Raechel-Dan-Gallery/raechel-dan-1.jpeg) no-repeat
+    top/cover;
 }
 
 .slide:nth-child(5) {
-  background: url(/img/nadya-nick-3.jpeg) no-repeat bottom/cover;
+  background: url(/img/Nadya-Nick-Gallery/nadya-nick-3.webp) no-repeat
+    bottom/cover;
 }
 
 .slide:nth-child(6) {
-  background: url(/img/karissa-cody-2.jpeg) no-repeat center/cover;
+  background: url(/img/Karissa-Cody-Gallery/karissa-cody-2.jpeg) no-repeat
+    center/cover;
 }
 
 .slide:nth-child(7) {
-  background: url(/img/madison-sam-2.jpg) no-repeat bottom/cover;
+  background: url(/img/Madison-Sam-Gallery/madison-sam-2.webp) no-repeat
+    bottom/cover;
 }
 
 .slide:nth-child(8) {
-  background: url(/img/raechel-dan-3.jpg) no-repeat center/cover;
+  background: url(/img/Raechel-Dan-Gallery/raechel-dan-3.webp) no-repeat
+    center/cover;
 }
 
 /* ******SERVICES****** */
@@ -187,7 +195,8 @@ header .nav-bar {
 }
 
 .section-services {
-  background: url(/img/sarah-furkan-3.jpg) no-repeat bottom/cover;
+  background: url(/img/Sarah-Furkan-Gallery/sarah-furkan-3.webp) no-repeat
+    bottom/cover;
   padding-bottom: 20rem;
 }
 
@@ -220,15 +229,18 @@ header .nav-bar {
 }
 
 .wedding-card {
-  background: url(/img/mikall-jacob-4.jpg) no-repeat center/cover;
+  background: url(/img/MiKall-Jacob-Gallery/mikall-jacob-4.webp) no-repeat
+    center/cover;
 }
 
 .engagement-card {
-  background: url(/img/heather-mike-2.jpeg) no-repeat center/cover;
+  background: url(/img/Heather-Mike-Engagement/heather-mike-2.webp) no-repeat
+    center/cover;
 }
 
 .destination-card {
-  background: url(/img/karissa-cody-5.jpeg) no-repeat center/cover;
+  background: url(/img/Karissa-Cody-Gallery/karissa-cody-5.webp) no-repeat
+    center/cover;
 }
 
 .card-text {
@@ -242,7 +254,8 @@ header .nav-bar {
 /* ******RECENT WORK****** */
 
 .section-recent {
-  background: url(/img/heather-mike-1.jpeg) no-repeat bottom/cover;
+  background: url(/img/Heather-Mike-Engagement/heather-mike-1.webp) no-repeat
+    bottom/cover;
   padding: 12rem 0 12rem 0;
 }
 
@@ -291,33 +304,35 @@ header .nav-bar {
 } */
 
 .gabrhael-card {
-  background: url(/img/gabrhael-eric-3.jpeg) no-repeat center/cover;
+  background: url(/img/Gabrhael-Eric-Gallery/gabrhael-eric-3.webp) no-repeat
+    center/cover;
   grid-column: 1;
   grid-row: 1 / span 2;
 }
 
 .sarah-card {
-  background: url(/img/sarah-furkan-2.jpeg) no-repeat center/cover;
+  background: url(/img/Sarah-Furkan-Gallery/sarah-furkan-2.jpeg) no-repeat
+    center/cover;
   grid-column: 2;
   grid-row: 1;
   margin-top: 10rem;
 }
 
 .val-card {
-  background: url(/img/val-esai-2.jpeg) no-repeat center/cover;
+  background: url(/img/Val-Esai-Gallery/val-esai-2.jpeg) no-repeat center/cover;
   grid-column: 3;
   grid-row: 1;
   margin-top: 22rem;
 }
 
 .karissa-card {
-  background: url(/img/karissa-danny-2.jpeg) no-repeat center/cover;
+  background: url(/img/karissa-danny-2.webp) no-repeat center/cover;
   grid-column: 1;
   grid-row: 2;
 }
 
-.michelle-card {
-  background: url(/img/michelle-david-4.jpg) no-repeat center/cover;
+.madison-card {
+  background: url(/img/Madison-Sam-Engagement/21.jpeg) no-repeat center/cover;
   grid-column: 2;
   grid-row: 2;
   margin-top: 10rem;
@@ -482,14 +497,16 @@ textarea {
 
 .section-weddings-2021 {
   display: block;
-  background: url(/img/sarah-furkan-6.jpeg) no-repeat bottom/cover;
+  background: url(/img/Sarah-Furkan-Gallery/sarah-furkan-6.jpeg) no-repeat
+    bottom/cover;
   padding-bottom: 20rem;
   position: relative;
 }
 
 .section-weddings-2020 {
   display: block;
-  background: url(/img/nadya-nick-10.jpeg) no-repeat bottom/cover;
+  background: url(/img/Nadya-Nick-Gallery/nadya-nick-10.jpeg) no-repeat
+    bottom/cover;
   padding-bottom: 20rem;
   position: relative;
   background-attachment: fixed;
@@ -517,16 +534,6 @@ textarea {
   cursor: pointer;
 }
 
-.weddings-2021.show {
-  transform: translateY(-5rem);
-  opacity: 0.6;
-}
-
-.weddings-2021:hover {
-  opacity: 1;
-  color: #333;
-}
-
 .weddings-2020 {
   height: 48rem;
   width: 32rem;
@@ -548,51 +555,62 @@ textarea {
 }
 
 .weddings-2021 {
-  background: url(/img/sarah-furkan-7.jpeg) no-repeat center/cover;
+  background: url(/img/Sarah-Furkan-Gallery/sarah-furkan-7.jpeg) no-repeat
+    center/cover;
 }
 
 .weddings-2021:nth-child(2) {
-  background: url(/img/brianne-jake-1.jpeg) no-repeat center/cover;
+  background: url(/img/Brianne-Jake-Gallery/brianne-jake-1.jpeg) no-repeat
+    center/cover;
 }
 
 .weddings-2021:nth-child(3) {
-  background: url(/img/gabrhael-eric-4.jpeg) no-repeat center/cover;
+  background: url(/img/Gabrhael-Eric-Gallery/gabrhael-eric-4.jpeg) no-repeat
+    center/cover;
 }
 
 .weddings-2021:nth-child(4) {
-  background: url(/img/bryn-justin-3.jpg) no-repeat center/cover;
+  background: url(/img/Bryn-Justin-Gallery/bryn-justin-3.webp) no-repeat
+    center/cover;
 }
 
 .weddings-2021:nth-child(5) {
-  background: url(/img/angel-keenan-3.jpeg) no-repeat center/cover;
+  background: url(/img/Angel-Keenan-Gallery/angel-keenan-3.jpeg) no-repeat
+    center/cover;
 }
 
 .weddings-2021:nth-child(6) {
-  background: url(/img/erin-jason-6.jpeg) no-repeat center/cover;
+  background: url(/img/Erin-Jason-Gallery/erin-jason-6.jpeg) no-repeat
+    center/cover;
 }
 
 .weddings-2020 {
-  background: url(/img/raechel-dan-5.jpg) no-repeat center/cover;
+  background: url(/img/Raechel-Dan-Gallery/raechel-dan-5.jpeg) no-repeat
+    center/cover;
 }
 
 .weddings-2020:nth-child(2) {
-  background: url(/img/val-esai-4.jpeg) no-repeat center/cover;
+  background: url(/img/Val-Esai-Gallery/val-esai-4.jpeg) no-repeat center/cover;
 }
 
 .weddings-2020:nth-child(3) {
-  background: url(/img/nadya-nick-5.jpeg) no-repeat center/cover;
+  background: url(/img/Nadya-Nick-Gallery/nadya-nick-5.jpeg) no-repeat
+    center/cover;
 }
 
 .weddings-2020:nth-child(4) {
-  background: url(/img/karissa-cody-3.jpeg) no-repeat center/cover;
+  background: url(/img/Karissa-Cody-Gallery/karissa-cody-3.jpeg) no-repeat
+    center/cover;
 }
 
 .weddings-2020:nth-child(5) {
-  background: url(/img/madison-sam-7.jpeg) no-repeat center/cover;
+  background: url(/img/Madison-Sam-Gallery/madison-sam-7.jpeg) no-repeat
+    center/cover;
 }
 
 .weddings-2020:nth-child(6) {
-  background: url(/img/mikall-jacob-6.jpg) no-repeat center/cover;
+  background: url(/img/MiKall-Jacob-Gallery/mikall-jacob-6.webp) no-repeat
+    center/cover;
 }
 
 .card-text {
@@ -643,37 +661,19 @@ textarea {
 
 .section-engagements-2021 {
   display: block;
-  background: url(/img/erin-jason-7.jpg) no-repeat bottom/cover;
+  background: url(/img/Erin-Jason-Gallery/erin-jason-10.webp) no-repeat
+    bottom/cover;
   padding-bottom: 20rem;
   position: relative;
 }
 
 .section-engagements-2020 {
   display: block;
-  background: url(/img/alexa-josh-1.jpg) no-repeat bottom/cover;
+  background: url(/img/Alexa-Josh-Gallery/alexa-josh-1.jpeg) no-repeat
+    bottom/cover;
   padding-bottom: 20rem;
   position: relative;
   background-attachment: fixed;
-}
-
-.engagements-2021.show {
-  transform: translateY(-5rem);
-  opacity: 0.6;
-}
-
-.engagements-2021:hover {
-  opacity: 1;
-  color: #333;
-}
-
-.engagements-2020.show {
-  transform: translateY(-5rem);
-  opacity: 0.6;
-}
-
-.engagements-2020:hover {
-  opacity: 1;
-  color: #333;
 }
 
 .gallery-photo-portrait {
@@ -689,19 +689,23 @@ textarea {
 /* ******ENGAGEMENTS****** */
 
 .engagements-2021 {
-  background: url(/img/erin-jason-9.jpeg) no-repeat center/cover;
+  background: url(/img/Erin-Jason-Engagement/erin-jason-9.jpeg) no-repeat
+    center/cover;
 }
 
 .engagements-2021:nth-child(2) {
-  background: url(/img/karissa-danny-5.jpeg) no-repeat center/cover;
+  background: url(/img/Karissa-Danny-Engagement/karissa-danny-5.jpeg) no-repeat
+    center/cover;
 }
 
 .engagements-2021:nth-child(3) {
-  background: url(/img/claire-jake-6.jpeg) no-repeat center/cover;
+  background: url(/img/Claire-Jake-Engagement/claire-jake-6.jpeg) no-repeat
+    center/cover;
 }
 
 .engagements-2021:nth-child(4) {
-  background: url(/img/madison-sam-8.jpeg) no-repeat center/cover;
+  background: url(/img/Madison-Sam-Engagement/madison-sam-8.jpeg) no-repeat
+    center/cover;
 }
 
 .engagements-2021:nth-child(5) {
@@ -725,13 +729,15 @@ textarea {
 }
 
 .engagements-2020:nth-child(4) {
-  background: url(/img/jared-wyatt-2.jpg) no-repeat center/cover;
+  background: url(/img/Jared-Wyatt-Gallery/jared-wyatt-2.jpg) no-repeat
+    center/cover;
 }
 
 .engagements-2020:nth-child(5) {
-  background: url(/img/madison-sam-7.jpeg) no-repeat center/cover;
+  background: url(/img/Karissa-Cody-Engagement/34.jpeg) no-repeat center/cover;
 }
 
 .engagements-2020:nth-child(6) {
-  background: url(/img/mikall-jacob-6.jpg) no-repeat center/cover;
+  background: url(/img/MiKall-Jacob-Gallery/mikall-jacob-6.webp) no-repeat
+    center/cover;
 }

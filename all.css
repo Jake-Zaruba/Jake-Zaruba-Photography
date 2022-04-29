@@ -8,7 +8,10 @@
 .weddings-year,
 .section-weddings-2021,
 .section-weddings-2020,
-.wedding-page-card {
+.section-engagements-2021,
+.section-engagements-2020,
+.wedding-cards,
+.section-gallery {
   animation: transitionIn 1s;
 }
 
@@ -22,16 +25,3 @@
     transform: translateX(0);
   }
 }
-
-/* .section-slider {
-  animation: transitionSlider 1s;
-}
-
-@keyframes transitionSlider {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */

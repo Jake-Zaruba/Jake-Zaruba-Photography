@@ -12,7 +12,6 @@ window.addEventListener(`scroll`, function (e) {
 
 //DELAY PARALLAX//
 
-// Target element to be observed.
 // const observerElement = document.querySelector("#section2");
 // // Intersection Observer Configuration
 // const observerOptions = {
