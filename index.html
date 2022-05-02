@@ -9,10 +9,14 @@
       content="Jake Zaruba Photography specializes in capturing wedding, engagement and destination photos in central Wisconsin, and throughout the United Sates."
     />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/queries.css" />
     <title>Jake Zaruba Photography</title>
   </head>
   <body>
-    <header>
+    <header class="header nav-open">
+      <div class="mobile-logo-box">
+        <img class="mobile-logo" src="/img/jake zaruba logo black.png">
+      </div>
       <div class="nav-bar">
         <div class="navigation left-side">
           <div class="nav-list nav-list-left">
@@ -34,6 +38,39 @@
             <a href="contact.html">CONTACT</a>
           </div>
         </div>
+      </div>
+      <button class="btn-mobile-nav">
+        <svg
+          class="mobile-nav-icon open-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        <svg
+          class="mobile-nav-icon close-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
       </div>
     </header>
     <section class="section-slider">
@@ -101,26 +138,45 @@
     <h2 class="section-header">Recent Work</h2>
     <section class="section-recent">
       <div class="recent-cards" title="Recently captured photo galleries">
-        <div class="recent-card show gabrhael-card">
+        <a
+          href="/wedding-galleries/Gabrhael-Eric-Wedding.html"
+          class="recent-card show gabrhael-card"
+        >
           <h2 class="card-text">Gabrhael & Eric</h2>
-        </div>
-        <div class="recent-card sarah-card">
+        </a>
+        <a
+          href="/wedding-galleries/Sarah-Furkan-Wedding.html"
+          class="recent-card sarah-card"
+        >
           <h2 class="card-text">Sarah & Furkan</h2>
-        </div>
-        <div class="recent-card val-card">
+        </a>
+        <a
+          href="/wedding-galleries/Val-Esai-Wedding.html"
+          class="recent-card val-card"
+        >
           <h2 class="card-text">Val & Esai</h2>
-        </div>
-        <div class="recent-card karissa-card">
+        </a>
+        <a
+          href="/engagement-galleries/Karissa-Danny-Engagement.html"
+          class="recent-card karissa-card"
+        >
           <h2 class="card-text">Karissa & Danny</h2>
-        </div>
-        <div class="recent-card madison-card">
+        </a>
+        <a
+          href="/engagement-galleries/Madison-Sam-Engagement.html"
+          class="recent-card madison-card"
+        >
           <h2 class="card-text">Madison & Sam</h2>
-        </div>
-        <div class="recent-card jared-card">
+        </a>
+        <a
+          href="/engagement-galleries/Jared-Wyatt-Engagement.html"
+          class="recent-card jared-card"
+        >
           <h2 class="card-text">Jared & Wyatt</h2>
-        </div>
+        </a>
       </div>
     </section>
   </body>
   <script src="/main.js"></script>
+  <script src="/nav.js"></script>
 </html>

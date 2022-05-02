@@ -4,21 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="Jake Zaruba Phtotography has photographed over 80 engagement sessions throughout Wisconsin and beyond. Explore recent engagement photo galleries."
+  />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/queries.css" />
     <title>Engagement Galleries | Jake Zaruba Photography</title>
   </head>
   <body>
-    <header>
+    <header class="header nav-open">
       <div class="nav-bar">
         <div class="navigation left-side">
           <div class="nav-list nav-list-left">
-            <a href="index.html">HOME</a>
-            <a href="/weddings.html">WEDDINGS</a>
-            <a href="#">ENGAGEMENTS</a>
+            <a href="#">HOME</a>
+            <a href="weddings.html">WEDDINGS</a>
+            <a href="/engagements.html">ENGAGEMENTS</a>
           </div>
         </div>
         <a href="index.html" class="nav-logo">
-          <img class="logo" src="/img/jake zaruba logo black.png" />
+          <img
+            class="logo"
+            alt="Jake Zaruba Photography logo"
+            src="/img/jake zaruba logo black.png"
+          />
         </a>
         <div class="navigation right-side">
           <div class="nav-list nav-list-right">
@@ -26,6 +35,39 @@
             <a href="contact.html">CONTACT</a>
           </div>
         </div>
+      </div>
+      <button class="btn-mobile-nav">
+        <svg
+          class="mobile-nav-icon open-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        <svg
+          class="mobile-nav-icon close-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
       </div>
     </header>
     <h2 class="about-header">Engagements</h2>
@@ -79,4 +121,5 @@
     </section>
   </body>
   <script src="/parallax.js"></script>
+  <script src="/nav.js"></script>
 </html>

@@ -28,7 +28,6 @@
   }
 }
 
-
 * {
   padding: 0;
   margin: 0;
@@ -37,7 +36,7 @@
 
 html {
   font-size: 62.5%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 body {
@@ -50,6 +49,7 @@ body {
   /* position: relative; */
   max-width: 180rem;
   margin: 0 auto;
+  overflow-x: hidden;
   /* overflow-y: hidden; */
 }
 
@@ -60,6 +60,7 @@ body {
 /* ******NAV BAR****** */
 
 header {
+  position: absolute;
   z-index: 10;
   position: fixed;
   width: 100%;
@@ -90,6 +91,12 @@ header .nav-bar {
   margin-right: 16rem;
 }
 
+.mobile-logo {
+  height: 5.5rem;
+  width: 8.4rem;
+  display: none;
+}
+
 .nav-bar {
   background-color: rgba(238, 238, 238, 0.515);
 }
@@ -113,6 +120,28 @@ header .nav-bar {
 
 .nav-list-right {
   justify-self: flex-end;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+}
+
+.mobile-nav-icon {
+  height: 4rem;
+  width: 4rem;
+  color: #333;
+}
+
+.close-icon {
+  display: none;
 }
 
 /* ******SLIDER****** */
@@ -182,7 +211,7 @@ header .nav-bar {
 }
 
 .slide:nth-child(2) {
-  background: url(/img/Erin-Jason-Gallery/erin-jason-1.jpeg) no-repeat
+  background: url(/img/Erin-Jason-Gallery/erin-jason-1.webp) no-repeat
     bottom/cover;
 }
 
@@ -299,7 +328,6 @@ header .nav-bar {
 }
 
 .recent-card {
-  /* margin-top: 12rem; */
   height: 48rem;
   width: 32rem;
   border: 1rem solid rgba(238, 238, 238, 0.655);
@@ -307,6 +335,7 @@ header .nav-bar {
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   opacity: 0;
+  text-decoration: none;
 }
 
 .recent-card.show {
@@ -318,21 +347,6 @@ header .nav-bar {
   opacity: 1;
   color: #333;
 }
-
-/* .landscape-card {
-  height: 32rem;
-  width: 48rem;
-  border: 1rem solid rgba(238, 238, 238, 0.655);
-  color: black;
-  opacity: 0.6;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.landscape-card:hover {
-  opacity: 1;
-  color: #333;
-} */
 
 .gabrhael-card {
   background: url(/img/Gabrhael-Eric-Gallery/gabrhael-eric-3.webp) no-repeat
@@ -357,7 +371,8 @@ header .nav-bar {
 }
 
 .karissa-card {
-  background: url(/img/karissa-danny-2.webp) no-repeat center/cover;
+  background: url(/img/Karissa-Danny-Engagement/karissa-danny-5.webp) no-repeat
+    center/cover;
   grid-column: 1;
   grid-row: 2;
 }
@@ -370,7 +385,8 @@ header .nav-bar {
 }
 
 .jared-card {
-  background: url(/img/jared-wyatt-1.jpeg) no-repeat center/cover;
+  background: url(/img/Jared-Wyatt-Gallery/jared-wyatt-2.jpg) no-repeat
+    center/cover;
   grid-column: 3;
   grid-row: 2;
   margin-top: 22rem;
@@ -382,12 +398,6 @@ header .nav-bar {
   text-align: center;
   font-size: 6rem;
   font-weight: 600;
-  /* background: linear-gradient(
-      to right bottom,
-      rgba(237, 237, 237, 0.531),
-      rgba(232, 214, 199, 0.35)
-    ),
-    url("/img/val-esai-1.jpeg"); */
 }
 
 .section-about {
@@ -521,14 +531,14 @@ textarea {
   font-weight: 300;
   letter-spacing: 0.3rem;
   position: absolute;
-  left: 44.6%;
+  left: 43.6%;
   top: 9.4%;
   z-index: 2;
 }
 
 .section-weddings-2021 {
   display: block;
-  background: url(/img/Sarah-Furkan-Gallery/sarah-furkan-6.jpeg) no-repeat
+  background: url(/img/Sarah-Furkan-Gallery/sarah-furkan-6.webp) no-repeat
     bottom/cover;
   padding-bottom: 20rem;
   position: relative;
@@ -536,7 +546,7 @@ textarea {
 
 .section-weddings-2020 {
   display: block;
-  background: url(/img/Nadya-Nick-Gallery/nadya-nick-10.jpeg) no-repeat
+  background: url(/img/Nadya-Nick-Gallery/nadya-nick-10.webp) no-repeat
     bottom/cover;
   padding-bottom: 20rem;
   position: relative;
@@ -654,22 +664,6 @@ textarea {
 
 /* ******WEDDING GALLERIES****** */
 
-.section-gallery {
-  display: block;
-  justify-content: center;
-}
-
-.wedding-gallery {
-  display: grid;
-  width: 140rem;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr;
-  column-gap: 2rem;
-  row-gap: 2rem;
-  justify-items: center;
-  margin: 0 auto;
-}
-
 .engagements-2021 {
   height: 48rem;
   width: 32rem;
@@ -705,16 +699,6 @@ textarea {
   padding-bottom: 20rem;
   position: relative;
   background-attachment: fixed;
-}
-
-.gallery-photo-portrait {
-  height: 48rem;
-  width: 32rem;
-}
-
-.gallery-photo-landscape {
-  height: 48rem;
-  width: 72rem;
 }
 
 /* ******ENGAGEMENTS****** */
