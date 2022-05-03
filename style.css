@@ -278,6 +278,19 @@ header .nav-bar {
   text-decoration: none;
 }
 
+.gallery-card {
+  margin-top: 32rem;
+  /* margin-bottom: 2rem; */
+  height: 48rem;
+  width: 32rem;
+  border: 1rem solid rgba(238, 238, 238, 0.655);
+  color: black;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .card.show {
   transform: translateY(-5rem);
   opacity: 0.6;
@@ -444,8 +457,8 @@ header .nav-bar {
 }
 
 .contact-image-box {
-  width: 90rem;
-  height: 60;
+  height: 64rem;
+  width: auto;
   align-self: center;
   margin: auto;
   overflow: hidden;

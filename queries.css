@@ -1,4 +1,55 @@
+@media (max-width: 75em) {
+  .wedding-cards {
+    display: grid;
+    width: auto;
+    margin-top: -2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 48rem);
+    justify-items: center;
+    column-gap: 5%;
+    row-gap: 2%;
+  }
+}
+
 @media (max-width: 62.5em) {
+  .section-about {
+    flex-direction: column;
+  }
+
+  .about-text-box {
+    margin: auto;
+    width: 90%;
+  }
+
+  .about-photo,
+  .about-img-box {
+    margin: auto;
+  }
+
+  .secondary-title {
+    text-align: center;
+  }
+
+  .section-services {
+    padding-bottom: 0;
+  }
+
+  .contact-image-box {
+    display: none;
+  }
+
+  .top-container {
+    display: block;
+    margin: auto;
+  }
+
+  .contact-form-box {
+    padding: 2rem;
+    margin: 0 auto;
+    height: 64rem;
+    width: 44rem;
+  }
+
   .sarah-card,
   .val-card,
   .madison-card,
@@ -122,23 +173,121 @@
   .section-header {
     margin: 3rem 0 3rem 0;
   }
+
   .cards {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    gap: 5%;
+    align-items: center;
   }
+
   .section-services {
     height: 200vh;
     width: auto;
   }
+
   .card {
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
     height: 48rem;
     width: 32rem;
   }
-  .cards {
+}
+
+@media (max-width: 48em) {
+  .wedding-cards {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    height: 320rem;
+    width: auto;
     align-items: center;
+    /* column-gap: 2%; */
+    /* row-gap: 8rem; */
+  }
+
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    height: 380rem;
+    width: auto;
+    align-items: center;
+    /* column-gap: 2%; */
+    row-gap: 6rem;
+  }
+
+  .gallery-card {
+    margin-top: 0;
+    height: 48rem;
+    width: 32rem;
+    border: none;
+  }
+
+  .section-weddings-2021 {
+    background: url(/img/Erin-Jason-Gallery/erin-jason-10.jpg) no-repeat
+      left/cover;
+    padding-top: 12rem;
+    height: 280rem;
+  }
+
+  .section-weddings-2020 .wedding-cards {
+    padding-top: 38rem;
+  }
+
+  .weddings-year {
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(-80%);
+    color: #333;
+  }
+
+  #weddings-year-2020 {
+    position: sticky;
+    transform: translateY(40%) !important;
+    color: rgba(238, 238, 238, 0.509);
+  }
+
+  #weddings-year-2021 {
+    color: rgba(238, 238, 238, 0.509) !important;
+  }
+
+  .section-engagements-2021 {
+    background: url(/img/Sarah-Furkan-Gallery/sarah-furkan-9.jpg) no-repeat
+      center/cover;
+    padding-top: 12rem;
+    height: 280rem;
+  }
+
+  .section-engagements-2020 .wedding-cards {
+    padding-top: 38rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .top-container {
+    padding: 0;
+  }
+
+  .contact-form-box {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  textarea {
+    width: 60%;
+  }
+
+  .message,
+  .full-name,
+  .email-address,
+  .wedding-date {
+    align-content: center;
   }
 }
 
