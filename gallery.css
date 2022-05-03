@@ -114,6 +114,28 @@ header .nav-bar {
   justify-self: flex-end;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+}
+
+.mobile-nav-icon {
+  height: 4rem;
+  width: 4rem;
+  color: #333;
+}
+
+.close-icon {
+  display: none;
+}
+
 .about-header {
   padding: 8rem 0 8rem 0;
   text-align: center;
@@ -122,14 +144,16 @@ header .nav-bar {
 }
 
 .section-gallery {
-  display: block;
-  justify-content: center;
+  display: flex;
+  /* max-width: 190rem; */
+  /* margin: 2rem; */
 }
 
 .wedding-gallery {
   display: grid;
-  width: 137rem;
-  grid-template-columns: 1fr 2fr 1fr;
+  width: 100vw;
+  height: auto;
+  grid-template-columns: 1fr 2.33fr 1fr;
   grid-template-rows: 1fr;
   column-gap: 0.4rem;
   row-gap: 0.4rem;
@@ -138,11 +162,11 @@ header .nav-bar {
 }
 
 .gallery-photo-portrait {
-  height: 48rem;
-  width: 32rem;
+  height: 100%;
+  width: 100%;
 }
 
 .gallery-photo-landscape {
-  height: 48rem;
-  width: 72rem;
+  height: 100%;
+  width: 100%;
 }

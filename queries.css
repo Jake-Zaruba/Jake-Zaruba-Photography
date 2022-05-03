@@ -24,6 +24,7 @@
   .about-photo,
   .about-img-box {
     margin: auto;
+    padding-bottom: 2rem;
   }
 
   .secondary-title {
@@ -307,13 +308,14 @@
   #wedding-date {
     width: 70%;
   }
-
-  label {
-    /* text-align: center; */
-  }
 }
 
-@media (max-width: 30em) {
+@media (max-width: 42.5em) {
+  .slide:first-child {
+    background: url(/img/MiKall-Jacob-Gallery/mikall-jacob-1.webp) no-repeat 65% /
+      cover;
+  }
+
   .recent-card {
     height: 30rem;
     width: 30rem;
@@ -345,7 +347,7 @@
   }
 }
 
-@media (max-width: 27em) {
+@media (max-width: 38em) {
   .section-recent {
     background: url(/img/Emily-Matt-Engagement/emily-matt-1.jpg) no-repeat
       bottom/cover;
@@ -361,5 +363,37 @@
 
   .recent-card {
     margin-top: 5rem;
+  }
+
+  .recent-card.show {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+
+  .recent-card:hover {
+    opacity: 1;
+  }
+
+  .wedding-gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* column-gap: 0.4rem;
+    row-gap: 0.4rem; */
+    justify-items: center;
+  }
+
+  .gallery-photo-landscape,
+  .gallery-photo-portrait {
+    width: 48rem;
+    height: auto;
+    margin: auto;
+  }
+
+  .about-header {
+    font-size: 5rem;
+    margin: auto;
   }
 }
