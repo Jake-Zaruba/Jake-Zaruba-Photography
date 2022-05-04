@@ -120,6 +120,7 @@ header .nav-bar {
 
 .nav-list-right {
   justify-self: flex-end;
+  transition: all 0.3s;
 }
 
 .btn-mobile-nav {
@@ -434,6 +435,8 @@ header .nav-bar {
 .secondary-title {
   font-size: 2.4rem;
   margin-bottom: 3rem;
+  font-weight: 500;
+  color: #333;
 }
 
 .secondary-paragraph {
