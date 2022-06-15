@@ -20,11 +20,11 @@
 @keyframes transitionIn {
   from {
     opacity: 0;
-    transform: translateX(-20rem);
+    transform: translateY(3rem);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -280,7 +280,7 @@ header .nav-bar {
 }
 
 .gallery-card {
-  margin-top: 32rem;
+  /* margin-top: 32rem; */
   /* margin-bottom: 2rem; */
   height: 48rem;
   width: 32rem;
@@ -566,6 +566,7 @@ textarea {
     bottom/cover;
   padding-bottom: 20rem;
   position: relative;
+  /* background-size: 200%; */
 }
 
 .section-weddings-2020 {
@@ -579,6 +580,7 @@ textarea {
 
 .wedding-cards {
   margin: 0 auto;
+  padding-top: 32rem;
   display: grid;
   width: 112rem;
   margin-top: -2rem;
@@ -595,7 +597,7 @@ textarea {
   border: 1rem solid rgba(238, 238, 238, 0.655);
   color: black;
   opacity: 1;
-  transition: all 0.4s ease-in-out;
+  /* transition: all 0.4s ease-in-out; */
   cursor: pointer;
 }
 
